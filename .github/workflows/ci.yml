@@ -65,6 +65,13 @@ jobs:
       - name: run tests
         run: |
           set -ex
+          PHP_VERSION=${{ matrix.php }}
+          REGEX="alpha|beta|RC"
+          echo $PHP_VERSION
+          echo $REGEX
+          if [[ "$PHP_VERSION" =~ "$REGEX" ]]; then
+            echo "Include alpha, beta or RC."
+          fi
           if ! ./run-tests.sh ${{ matrix.php }}; then
             cat /tmp/php-build.*.log
             exit 1
