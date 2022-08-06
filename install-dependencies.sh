@@ -117,6 +117,9 @@ case $DISTRO in
 			cmake3 . -DCMAKE_INSTALL_PREFIX=/usr && \
 			make && \
 			make install
+		# FIXME: For debug code
+		yum list installed | grep file
+		gcc --version
 		;;
 	darwin)
 		# brew install will fail if a package is already installed
