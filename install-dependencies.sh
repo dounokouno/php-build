@@ -120,6 +120,8 @@ case $DISTRO in
 		# FIXME: For debug code
 		yum list installed | grep file
 		gcc --version
+		file --version
+		which file
 		;;
 	darwin)
 		# brew install will fail if a package is already installed
