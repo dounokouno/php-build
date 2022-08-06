@@ -89,6 +89,7 @@ case $DISTRO in
 			bzip2-devel \
 			curl \
 			diffutils \
+			file \
 			findutils \
 			gcc \
 			gcc-c++ \
