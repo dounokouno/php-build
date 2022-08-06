@@ -69,13 +69,13 @@ case $DISTRO in
 		$SUDO yum install -y yum-utils epel-release
 		if [ ${VERSION_ID:-0} -lt 8 ]; then
 			$SUDO yum-config-manager --enable PowerTools
-			# Install gcc v10 and enable it
+			# Install gcc v11 and enable it
 			$SUDO yum install -y centos-release-scl
-			$SUDO yum install -y devtoolset-10-gcc-c++
+			$SUDO yum install -y devtoolset-11-gcc-c++
 			# Countermeasures for the message on the right: "MANPATH: unbound variable"
 			MANPATH=""
-			# Enable devtoolset-10 for gcc v10
-			source /opt/rh/devtoolset-10/enable
+			# Enable devtoolset-11 for gcc v11
+			source /opt/rh/devtoolset-11/enable
 		else
 			$SUDO yum install -y dnf-plugins-core
 			$SUDO yum config-manager --set-enabled powertools
