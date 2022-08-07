@@ -65,7 +65,7 @@ jobs:
       - name: run tests
         run: |
           set -ex
-          PHP_VERSION=${{ matrix.php }}
+          PHP_VERSION="${{ matrix.php }}"
           REGEX="alpha|beta|RC"
           echo $PHP_VERSION
           echo $REGEX
