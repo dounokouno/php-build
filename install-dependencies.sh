@@ -83,6 +83,7 @@ case $DISTRO in
 		$SUDO yum install -y \
 			autoconf \
 			autoconf213 \
+			automake \
 			bash \
 			bison \
 			bzip2 \
