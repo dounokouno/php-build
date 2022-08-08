@@ -118,10 +118,11 @@ case $DISTRO in
 			cmake3 . -DCMAKE_INSTALL_PREFIX=/usr && \
 			make && \
 			make install
+		yum list installed | grep make
 		# FIXME: For debug code
-		yum list installed | grep file
-		gcc --version
-		ls -la /usr/bin | grep file
+		# yum list installed | grep file
+		# gcc --version
+		# ls -la /usr/bin | grep file
 		# file --version
 		# which file
 		;;
