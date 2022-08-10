@@ -2,7 +2,6 @@ configure_option "--enable-gd"
 configure_option "--with-jpeg"
 configure_option "--with-zip"
 configure_option "--with-mhash"
-configure_option "--program-transform-name=php-8.2.0"
 
 configure_option -D "--with-xmlrpc"
 
