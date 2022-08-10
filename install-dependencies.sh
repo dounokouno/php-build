@@ -113,9 +113,9 @@ case $DISTRO in
 			sqlite-devel \
 			zlib-devel \
 			cmake3
-		$SUDO curl https://github.com/nih-at/libzip/releases/download/v1.7.3/libzip-1.7.3.tar.gz -L -o libzip-1.7.3.tar.gz && \
-			tar -zxvf libzip-1.7.3.tar.gz && \
-			cd libzip-1.7.3 && \
+		$SUDO curl https://github.com/nih-at/libzip/releases/download/v1.9.2/libzip-1.9.2.tar.gz -L -o libzip-1.9.2.tar.gz && \
+			tar -zxvf libzip-1.9.2.tar.gz && \
+			cd libzip-1.9.2 && \
 			cmake3 . -DCMAKE_INSTALL_PREFIX=/usr && \
 			make && \
 			make install
